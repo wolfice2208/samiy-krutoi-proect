@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  margin: 200px;
+  justify-content: space-between;
+  flex-direction: row;
+  background: linear-gradient(lime,rgb(255, 80, 255),rgb(255, 238, 0),rgb(255, 34, 255));
+  border: 11px solid orangered;
+  color: rgb(248, 39, 255);
+  font-size: 100px;
+  transform: scale(-1, -1);
+}
+body {
+  background: radial-gradient(rgb(0, 255, 191),rgb(255, 0, 179),rgb(135, 253, 0),rgb(153, 0, 255),rgb(255, 0, 0),rgb(255, 251, 0),rgb(255, 61, 239),rgb(235, 96, 216))
+}
+
+
+
