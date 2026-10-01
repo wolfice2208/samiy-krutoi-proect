@@ -1,16 +1,33 @@
 .card {
-  display: flex;
+  
+  
   margin: 200px;
   justify-content: space-between;
-  flex-direction: row;
-  background: linear-gradient(lime,rgb(255, 80, 255),rgb(255, 238, 0),rgb(255, 34, 255));
-  border: 11px solid orangered;
-  color: rgb(248, 39, 255);
-  font-size: 100px;
-  transform: scale(-1, -1);
+  
+  
+  
+  font-size: 25px;
+  transform: scale();
+  padding-bottom: 300px;
+  
+  background-repeat: no-repeat;
+  background-clip: text;
+  font-weight: 900;
+text-shadow: 2px 2px rgba(255, 0, 0, 0.363);
+ -webkit-text-stroke: 1px rgba(211, 209, 209, 0.473);
+  
+  
 }
 body {
-  background: radial-gradient(rgb(0, 255, 191),rgb(255, 0, 179),rgb(135, 253, 0),rgb(153, 0, 255),rgb(255, 0, 0),rgb(255, 251, 0),rgb(255, 61, 239),rgb(235, 96, 216))
+  background-image: url(https://media1.tenor.com/m/_8guGOXY8KEAAAAd/israel-flag-gif.gif);
+  background-attachment: fixed;
+  background-size:cover;
+  color: transparent;
+  
+  text-align: center;
+  img {
+  opacity: 0.5; /* Полупрозрачность 50% */
+}
 }
 
 

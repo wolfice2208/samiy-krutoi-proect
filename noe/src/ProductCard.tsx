@@ -1,7 +1,7 @@
 import './App.css'
 interface ProductProps {
     title:string
-    price:number
+    price:string
     inStock:boolean
 }
 function ProductCard({title,price,inStock}:ProductProps) {

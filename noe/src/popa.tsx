@@ -1,19 +1,19 @@
 import { useEffect, useState } from "react"
 import loading_gif from "./assets/middle-click-black-man.gif"
 import ProductCard from "./ProductCard"
-
 interface List {
-    id:number
+    id:string
     title:string
-    price:number
+    price:string
 }
 
 export default function DL(){
-    let itemsARR = [{id: 1, title: "CHMO1", price:9999},{id: 2, title: "CHMO333", price:1119},{id: 3, title: "CHMO213", price:991239} ]
+    let itemsARR = [{id: "JEWISH", title: "ISRAEL", price:"NUMBER ONE"} ]
     const [items, setItems] = useState<List[]>([]);
     const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
+        
         setIsLoading(true)
         setTimeout(() => {
             setIsLoading(false)

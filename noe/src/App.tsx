@@ -1,16 +1,21 @@
 import { useState } from "react"
-import Timer from "./Stopwatch"
+import UserProfile from "./Stopwatch"
 import DL from "./popa"
+import Fall from "./FallsNigga"
+
 import './App.css'
 function App() {
   const [isLoading, setIsLoading] = useState(true)
 setTimeout(() => {
   setIsLoading(false)
 }, 5000);
-if (isLoading) return <Timer/>
+
   return (
 <>
+
+<UserProfile userId={0}/>
 <DL/>
+<Fall/>
 </>
   )
 }

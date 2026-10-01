@@ -1,15 +1,11 @@
-import { useEffect, useState } from "react"
+import  useFetch  from "./useFetch"
+interface User { id: number; name: string; }
 
-export default function Timer() {
-  const [seconds, setSeconds] = useState(0);
+export default function UserProfile({ userId }: { userId: number }) {
+  const { data: isLoading, error } = useFetch<User>(`/api/users/${userId}`);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setSeconds(prevSeconds => prevSeconds + 1);
-    }, 1000); 
+  if (isLoading) return <p>Загрузка...</p>;
+  if (error) return <p>Ошибка: {error}</p>;
 
-    return () => clearInterval(intervalId);
-  },); 
-
-  return <div>Я хочу быть как Газан {seconds} секунд</div>;
+  return <div>Я хочу быть как </div>;
 }
